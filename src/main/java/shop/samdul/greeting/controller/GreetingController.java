@@ -1,9 +1,10 @@
 package shop.samdul.greeting.controller;
+import java.util.Stack;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import ch.qos.logback.core.model.Model;
+import org.springframework.ui.Model;
 
 @Controller 
 public class GreetingController {
@@ -14,6 +15,9 @@ public class GreetingController {
 				required=false,
 				defaultValue="HI") String name, 
 			Model model){
+		Stack<String> names = new Stack<>();
+
+		model.addAttribute("name",name);
 		
 		return "greeting";
 

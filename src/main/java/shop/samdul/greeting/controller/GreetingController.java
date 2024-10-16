@@ -11,11 +11,18 @@ import java.util.Stack;
 
 @Controller
 public class GreetingController {
+	Stack<String> names = new Stack<>();
+    @GetMapping("/greeting")
+    public String greeting(@RequestParam(name="name", required=false, defaultValue="HI") String name, Model model) {
+            names.push(name);
+            model.addAttribute("names", names);
+            return "greeting";
+    }
 
 	private Stack<People> nameStack = new Stack<>();
   
-  @GetMapping("/greeting")	
-  public String greeting(@RequestParam(name="name", required=false, defaultValue="HI") String name, Model model) {
+  @GetMapping("/people")	
+  public String pgreeting(@RequestParam(name="name", required=false, defaultValue="HI") String name, Model model) {
 		
 		People p = new People();
 		if (!nameStack.isEmpty()) {
@@ -28,6 +35,6 @@ public class GreetingController {
 		nameStack.push(p);
 		model.addAttribute("nameStack", nameStack);
 		
-		return "greeting";
+		return "people";
   }
 }

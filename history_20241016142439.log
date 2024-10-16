@@ -348,8 +348,10 @@ cd 3.9
 cd AbcBot
 cd DE32-2rd_team5
 cd DifferenceArray
+cd Hellojava
 cd LB
 cd MyFirstBot
+cd People
 cd REQUIREMENTS.md
 cd VariableDeclared
 cd acc.csv
@@ -370,6 +372,7 @@ cd airflow_dags
 cd airflow_spark
 cd airflow_team
 cd airflow_venv
+cd all
 cd app
 cd app/kafka_2.13-3.8.0
 cd app/ng
@@ -387,6 +390,7 @@ cd bin
 cd bot
 cd bots
 cd build
+cd build/libs
 cd cdoe
 cd chat
 cd chat_data
@@ -408,6 +412,7 @@ cd code/hnh
 cd code/io
 cd code/java
 cd code/java/
+cd code/java/demo
 cd code/java/greeting
 cd code/javva
 cd code/kafka
@@ -449,6 +454,7 @@ cd data/parquet/
 cd date
 cd dd
 cd ddocs
+cd demo
 cd dhat
 cd dkey
 cd docker
@@ -500,6 +506,7 @@ cd import
 cd import_db.py
 cd java
 cd java 
+cd java/greeting
 cd k
 cd kachat
 cd kafka
@@ -509,6 +516,7 @@ cd kchat
 cd keey
 cd keu
 cd key
+cd libs
 cd living_alone.csv
 cd load_dt=20151231/repNationCd=F
 cd log
@@ -606,6 +614,8 @@ cd src/fishregression/
 cd src/fishregression/model
 cd src/fishregression/model/
 cd src/hi_hahahellooo
+cd src/main/java/shop/samdul/greeting
+cd src/main/java/shop/samdul/hellojava
 cd src/mnist
 cd src/mnist/
 cd src/movdata
@@ -725,6 +735,9 @@ cp de_app.py src/chat/de_app.py
 cp dynamic_flat.py pasing_parquet.py
 cp fish fish_test_data.csv.gz
 cp fish fishml_me
+cp greeting-0.0.1-SNAPSHOT all
+cp greeting-0.0.1-SNAPSHOT-plain.jar plan
+cp greeting-0.0.1-SNAPSHOT.jar all
 cp helloworld.py simple_bash.py
 cp history_*.log tmp/history_log
 cp history_20230712*.log 20240712
@@ -1244,6 +1257,7 @@ git commit -m "add ORDER BY num"
 git commit -m "add README"
 git commit -m "add README.md"
 git commit -m "add UPLOAD_DIR"
+git commit -m "add api"
 git commit -m "add args"
 git commit -m "add b"
 git commit -m "add buttons on streamlit"
@@ -1780,6 +1794,8 @@ history | grep docker push
 history | grep exec
 history | grep export
 history | grep jar
+history | grep java
+history | grep java -jar
 history | grep javac
 history | grep log
 history | grep main
@@ -1811,6 +1827,7 @@ history | grep uvicorn
 history | grep worker
 history | redis
 history_*
+hitory | grep java
 hitory | grep origin
 holjjag
 holjjagml
@@ -1825,6 +1842,7 @@ j[s
 java -cp bin App
 java -d ../bin App.java
 java -d /home/hahahellooo/java/hijava/src App.java
+java -jar build/libs/demo-0.0.1-SNAPSHOT.jar
 java -jar build/libs/greeting-0.0.1-SNAPSHOT.jar
 java -jar ngrinder-controller-3.5.9-p1.war --port 8949
 java -jar robocode-1.9.5.4-setup.jar
@@ -1964,6 +1982,7 @@ mkdir _sudden.sh
 mkdir a
 mkdir a/b
 mkdir a/b/c
+mkdir all
 mkdir app
 mkdir b
 mkdir banner_hahahellooo
@@ -2021,6 +2040,7 @@ mkdir parquet
 mkdir parquet_history
 mkdir pj2
 mkdir pj3
+mkdir plan
 mkdir public
 mkdir py
 mkdir pyver
@@ -2037,6 +2057,7 @@ mkdir src
 mkdir src/fishregression/model
 mkdir src/kchat/kafka
 mkdir src/main/java/shop/samdul/greeting/controller
+mkdir src/main/java/shop/samdul/hellojava/controller
 mkdir src/stdash/pages
 mkdir sss_
 mkdir stdash
@@ -2097,6 +2118,7 @@ mv fishml_me fishml_guess
 mv fishreg fishregression
 mv flower.pid webserver-monitor.pid webserver.pid worker.pid ~/celery
 mv graph_living_alone.ipynb merge_data_mieun.ipynb merge_data_sunwoo.ipynb note
+mv greeting Hellojava
 mv greeting.zip ~/code/java
 mv hahahellooo.github.io hahahellooo.github.io.b
 mv images docs
@@ -2583,6 +2605,7 @@ rm -rf heatmap_seongbuk.csv
 rm -rf hijava
 rm -rf history_*
 rm -rf history_* seoul_project
+rm -rf histoty_*
 rm -rf histroy_*
 rm -rf hnh
 rm -rf index.html
@@ -3621,6 +3644,7 @@ vi b.bbb
 vi b.html
 vi be.html
 vi ben.html
+vi build.gradle
 vi chat_da
 vi chat_dags.py
 vi chat_data.py

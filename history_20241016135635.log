@@ -53,6 +53,7 @@ $SPARK_HOME
 ./goaws.sh
 ./gradlew
 ./gradlew bootRun
+./gradlew build
 ./rootdir.sh
 ./rrrrr.sh
 ./run db.sh
@@ -325,6 +326,7 @@ cd .gitignore
 cd .gradle
 cd .ssh
 cd /
+cd //
 cd /data/chat_data/chat_mam.parquet
 cd /etc
 cd /home
@@ -346,8 +348,10 @@ cd 3.9
 cd AbcBot
 cd DE32-2rd_team5
 cd DifferenceArray
+cd Hellojava
 cd LB
 cd MyFirstBot
+cd People
 cd REQUIREMENTS.md
 cd VariableDeclared
 cd acc.csv
@@ -368,6 +372,7 @@ cd airflow_dags
 cd airflow_spark
 cd airflow_team
 cd airflow_venv
+cd all
 cd app
 cd app/kafka_2.13-3.8.0
 cd app/ng
@@ -385,6 +390,7 @@ cd bin
 cd bot
 cd bots
 cd build
+cd build/libs
 cd cdoe
 cd chat
 cd chat_data
@@ -405,6 +411,8 @@ cd code/hi_hahahellooo
 cd code/hnh
 cd code/io
 cd code/java
+cd code/java/
+cd code/java/demo
 cd code/java/greeting
 cd code/javva
 cd code/kafka
@@ -446,6 +454,7 @@ cd data/parquet/
 cd date
 cd dd
 cd ddocs
+cd demo
 cd dhat
 cd dkey
 cd docker
@@ -456,6 +465,7 @@ cd down
 cd dt=1970-01-01
 cd envs
 cd extract
+cd fastapi
 cd fish
 cd fish_parqeut
 cd fish_parquet
@@ -496,6 +506,7 @@ cd import
 cd import_db.py
 cd java
 cd java 
+cd java/greeting
 cd k
 cd kachat
 cd kafka
@@ -505,6 +516,7 @@ cd kchat
 cd keey
 cd keu
 cd key
+cd libs
 cd living_alone.csv
 cd load_dt=20151231/repNationCd=F
 cd log
@@ -602,6 +614,8 @@ cd src/fishregression/
 cd src/fishregression/model
 cd src/fishregression/model/
 cd src/hi_hahahellooo
+cd src/main/java/shop/samdul/greeting
+cd src/main/java/shop/samdul/hellojava
 cd src/mnist
 cd src/mnist/
 cd src/movdata
@@ -721,6 +735,9 @@ cp de_app.py src/chat/de_app.py
 cp dynamic_flat.py pasing_parquet.py
 cp fish fish_test_data.csv.gz
 cp fish fishml_me
+cp greeting-0.0.1-SNAPSHOT all
+cp greeting-0.0.1-SNAPSHOT-plain.jar plan
+cp greeting-0.0.1-SNAPSHOT.jar all
 cp helloworld.py simple_bash.py
 cp history_*.log tmp/history_log
 cp history_20230712*.log 20240712
@@ -1240,6 +1257,7 @@ git commit -m "add ORDER BY num"
 git commit -m "add README"
 git commit -m "add README.md"
 git commit -m "add UPLOAD_DIR"
+git commit -m "add api"
 git commit -m "add args"
 git commit -m "add b"
 git commit -m "add buttons on streamlit"
@@ -1296,6 +1314,7 @@ git commit -m "banner.py"
 git commit -m "branch 1.0.0/k"
 git commit -m "branch mej"
 git commit -m "bring pyspark_db.py"
+git commit -m "build"
 git commit -m "chage IP"
 git commit -m "chage code about label"
 git commit -m "chage main.py again"
@@ -1750,6 +1769,7 @@ hi-hahahellooo
 hi-l
 hi_hahahellooo
 hi_l
+hisory
 hisotry
 history
 history 
@@ -1774,6 +1794,8 @@ history | grep docker push
 history | grep exec
 history | grep export
 history | grep jar
+history | grep java
+history | grep java -jar
 history | grep javac
 history | grep log
 history | grep main
@@ -1805,6 +1827,7 @@ history | grep uvicorn
 history | grep worker
 history | redis
 history_*
+hitory | grep java
 hitory | grep origin
 holjjag
 holjjagml
@@ -1819,6 +1842,8 @@ j[s
 java -cp bin App
 java -d ../bin App.java
 java -d /home/hahahellooo/java/hijava/src App.java
+java -jar build/libs/demo-0.0.1-SNAPSHOT.jar
+java -jar build/libs/greeting-0.0.1-SNAPSHOT.jar
 java -jar ngrinder-controller-3.5.9-p1.war --port 8949
 java -jar robocode-1.9.5.4-setup.jar
 java -jar robocode-tankroyale-gui-0.24.4.jar
@@ -1957,6 +1982,7 @@ mkdir _sudden.sh
 mkdir a
 mkdir a/b
 mkdir a/b/c
+mkdir all
 mkdir app
 mkdir b
 mkdir banner_hahahellooo
@@ -2014,6 +2040,7 @@ mkdir parquet
 mkdir parquet_history
 mkdir pj2
 mkdir pj3
+mkdir plan
 mkdir public
 mkdir py
 mkdir pyver
@@ -2029,6 +2056,8 @@ mkdir sql
 mkdir src
 mkdir src/fishregression/model
 mkdir src/kchat/kafka
+mkdir src/main/java/shop/samdul/greeting/controller
+mkdir src/main/java/shop/samdul/hellojava/controller
 mkdir src/stdash/pages
 mkdir sss_
 mkdir stdash
@@ -2063,6 +2092,7 @@ mv acc.csv .
 mv acc.csv/acc.csv accident.csv 
 mv acc.csv/part-00000-552ccb0a-fcf1-466e-80ba-2b50af49e487-c000.csv acc.csv
 mv acc.csv/part-00000-552ccb0a-fcf1-466e-80ba-2b50af49e487-c000.csv accident.csv
+mv api.py ~/code/java/greeting
 mv assets docs
 mv db.py model.py ~/tmp
 mv db.py src/threekcal_model/
@@ -2078,6 +2108,9 @@ mv educational_institution.csv educational_institution.csv estimated_income_by_r
 mv educational_institution.csv estimated_income_by_region.csv insurance_fee.csv learning_satisfaction.csv ~/seoul_project/rowdata
 mv educational_institution.csv estimated_income_by_region.csv ~/seoul_project/data
 mv expect_num_elder.csv/part-00000-18d5a131-9755-4486-98e0-38cc49a86c86-c000.csv futur_num_elder.csv
+mv fastapi.py ../
+mv fastapi.py api.py
+mv fastapi.py ~/code/fastapi
 mv first.sh tmp
 mv fish fishml_me
 mv fish_test_data.csv.gz ~/data/fish
@@ -2085,6 +2118,7 @@ mv fishml_me fishml_guess
 mv fishreg fishregression
 mv flower.pid webserver-monitor.pid webserver.pid worker.pid ~/celery
 mv graph_living_alone.ipynb merge_data_mieun.ipynb merge_data_sunwoo.ipynb note
+mv greeting Hellojava
 mv greeting.zip ~/code/java
 mv hahahellooo.github.io hahahellooo.github.io.b
 mv images docs
@@ -2318,6 +2352,7 @@ pip install streamlit
 pip install team_cmd
 pip install textual
 pip install upgrade pyspark==3.5.3
+pip install uvicorn
 pip install virtualenv
 pip isntall .
 pip lis
@@ -2563,12 +2598,14 @@ rm -rf fishml_me
 rm -rf fmnist
 rm -rf git hahahellooo.github.io
 rm -rf git_test
+rm -rf greeting.zip
 rm -rf hahahellooo
 rm -rf hahahellooo_cmd hahahellooo_cmd mieun_mul
 rm -rf heatmap_seongbuk.csv
 rm -rf hijava
 rm -rf history_*
 rm -rf history_* seoul_project
+rm -rf histoty_*
 rm -rf histroy_*
 rm -rf hnh
 rm -rf index.html
@@ -3531,9 +3568,12 @@ tstory
 uniq
 unzip greeting.zip
 unzip sample-bots-java-0.24.4.zip
+uvcorn fastapi:app --reload
 uvicon
 uvicorn
 uvicorn --help
+uvicorn api:app --reload
+uvicorn fastapi:app --reload
 uvicorn main:app --reload
 uvicorn src.fishmlserv. main:app --reload
 uvicorn src.fishmlserv.main:app --reload
@@ -3604,6 +3644,7 @@ vi b.bbb
 vi b.html
 vi be.html
 vi ben.html
+vi build.gradle
 vi chat_da
 vi chat_dags.py
 vi chat_data.py
@@ -3639,6 +3680,7 @@ vi docs/index.html
 vi docs/robots.txt
 vi dynamic_flat.py
 vi fastapi.py
+vi fastapi.py fastapi.py
 vi firebase.json
 vi first.sh
 vi fish_data_100k.csv
@@ -3796,6 +3838,9 @@ vi src/kchat/kafka/cschat.py
 vi src/kchat/kafka/multichat.py
 vi src/kchat/kafka/pd.py
 vi src/kchat/kafka/pdchat.py
+vi src/main/Q
+vi src/main/java/shop/samdul/greeting/controller/GreetingController.java
+vi src/main/resources/static/index.html
 vi src/mieun/mieun.py
 vi src/mieun_cmd/mieun.cmd
 vi src/mieun_cmd/mieun_cmd.py
@@ -3844,6 +3889,7 @@ vi src/threekcal_model/pages
 vi src/threekcal_model/pages/
 vi src/threekcal_model/pages/1_ÌÉ•É≠ÏÉ™§ÌÉ™∏_ÏÉ∑É•ÎÉÅÉºÎÉ≥Éº.py
 vi src/threekcal_model/pages/2_ÏΩÉ¥Î©É∏ÌÉ™∏_ÎÉΩºÎ≤®ÏÉÄÅÍ∏∞.py
+vi src/threekcal_model/streamlit/
 vi src/threekcal_model/streamlit/_pages
 vi src/threekcal_model/streamlit/main.py
 vi src/threekcal_model/streamlit/pages

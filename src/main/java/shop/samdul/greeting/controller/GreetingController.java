@@ -15,7 +15,6 @@ public class GreetingController {
 				required=false,
 				defaultValue="HI") String name, 
 			Model model){
-		Stack<String> names = new Stack<>();
 
 		model.addAttribute("name",name);
 		

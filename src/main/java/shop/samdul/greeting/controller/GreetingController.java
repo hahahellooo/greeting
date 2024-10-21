@@ -19,8 +19,8 @@ public class GreetingController {
 
 	private Stack<People> nameStack = new Stack<>();
   
-  @GetMapping("/people")	
-  public String pgreeting(@RequestParam(name="name", required=false, defaultValue="HI") String name, Model model) {
+    @GetMapping("/people")	
+    public String pgreeting(@RequestParam(name="name", required=false, defaultValue="HI") String name, Model model) {
 		
 		People p = new People();
 		if (!nameStack.isEmpty()) {

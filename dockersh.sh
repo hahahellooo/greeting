@@ -1,10 +1,12 @@
 #!/bin/bash
 
 echo "Docker STOP"
-docker stop greeting-0.0.1-SNAPSHOT.jar
+docker stop greeting
 
 echo "Docker REMOVE"
-docker rm greeting-0.0.1-SNAPSHOT.jar
+docker rm -f greeting
 
-echo "Docker RUN"
-docker run --name greeting -p 8080:8080 meiun/greeting:0.1.0
+echo "Docker pull"
+docker pull meiun/greeting:0.1.0
+
+

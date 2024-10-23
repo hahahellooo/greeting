@@ -11,6 +11,21 @@ $ ./gradlew bootRun
 $ ./gradlew build
 $ java -jar build/libs/greeting-0.0.1-SNAPSHOT.jar
 ```
+
+### Docker
+```bash
+$ docker build -t meiun/greeting:temurin .
+$ docker run -d --name temurin -p 8080:8080 meiun/greeting:temurin
+```
+
+### Docker compose
+```bash
+$ docker compose up -d --force-recreate --build
+$ docker compose stop
+$ docker compose start
+$ docker compose ls
+$ docker compose down
+```
 ### Reference Documentation
 For further reference, please consider the following sections:
 

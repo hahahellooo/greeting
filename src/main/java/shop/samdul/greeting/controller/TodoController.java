@@ -51,8 +51,3 @@ public class TodoController{
 	    todoService.deleteTodoById(id);
 	}
 }
-
-
-
-
-

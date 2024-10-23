@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import shop.samdul.greeting.service.TodoJpaService;
-import shop.samdul.greeting.service.TodoService;
+//import shop.samdul.greeting.service.TodoService;
 import shop.samdul.greeting.entity.TodoEntity;
 
 import java.util.List;
@@ -21,13 +21,15 @@ import java.util.Optional;
 @RequestMapping("/jpatodos")
 public class TodoJpaController{
 	
+	//@Autowired 아래에 적으면.. 요새트렌드
 	private final TodoJpaService todoJpaService;
-
+	
 	@Autowired
-	public TodoJpaController(TodoJpaService todoJpaService) {
-		this.todoJpaService = todoJpaService;
-	}	
+	public TodoJpaController(TodoJpaService todojpaService) {
+		this.todoJpaService = todojpaService;
+	}
 
+	//@GetMapping("/jpatodos") 안적으면 get으로 
 	@GetMapping
 	public List<TodoEntity> list() {
 	    return todoJpaService.getAllTodos();
@@ -36,14 +38,16 @@ public class TodoJpaController{
 	@GetMapping("/{id}")
 	public TodoEntity find(@PathVariable Integer id) {
 	    Optional<TodoEntity> optionalTodo = todoJpaService.getTodoById(id);
-	    if (optionalTodo.isPresent()) {
-				return optionalTodo.get();
-			} else {
-				throw new IllegalArgumentException("Todo with id " + id + " not found");
-			}
+		if (optionalTodo.isPresent()) {
+			return optionalTodo.get();
+		}
+		else {
+			throw new IllegalArgumentException("Todo with id" + id + "not found");
+		}	
 	}
 
 	//C - INSERT
+    //@PostMapping("/todos")
 	@PostMapping
 	public TodoEntity createTodo(@RequestBody TodoEntity todoEntity) {
 	    return todoJpaService.createTodo(todoEntity);
@@ -61,3 +65,4 @@ public class TodoJpaController{
 	    todoJpaService.deleteTodoById(id);
 	}
 }
+

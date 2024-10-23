@@ -16,10 +16,7 @@ public class TodoService {
         System.out.println("[todos]:"+todos.size());
         return todos;
     }
-    public TodoEntity findById(int id) {
-        System.out.println("Fetching TodoEntity with id: " + id);
-        TodoEntity todo = todoMapper.findById(id);
-        return todo;
-      }
+    public TodoEntity findById(Integer id) {
+      return todoMapper.findById(id);
     }
-
+  }

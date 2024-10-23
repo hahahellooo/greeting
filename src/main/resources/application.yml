@@ -9,5 +9,5 @@ spring:
     password: todo_passwd
  
 
-mybais:
+mybatis:
   mapper-locations: mappers/*.xml  

@@ -13,10 +13,10 @@ public class TodoController{
     @Autowired //TodoService 인스턴스를 자동으로 주입
     TodoService todoService;
 
-    @GetMapping("/list")
+    @GetMapping("/todos")
     public List<TodoEntity> list() { //TodoEntity 객체를 포함한 리스트, 클라이언트에게 json형식으로 반환
         System.out.println("[Controller]");
-        List<TodoEntity> r = todoService.getTodos(); //모든할일항목 조회
+        java.util.List<TodoEntity> r = todoService.getTodos(); //모든할일항목 조회
         return r;
     }
    

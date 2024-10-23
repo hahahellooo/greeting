@@ -15,39 +15,45 @@ import shop.samdul.greeting.entity.TodoEntity;
 import java.util.List;
 
 @RestController
-public class TodoController{
+@RequestMapping("/jpatodos")
+public class TodoJpaController{
 	
 	@Autowired
-	TodoService todoService;	
+	public TodoJpaController(TodoJpaService todoJpaService);{
+		this.todoJpaService=todoJpaService;
+	}	
 
-	@GetMapping("/todos")
+	@GetMapping
 	public List<TodoEntity> list() {
-		System.out.println("[Controller]");
-		List<TodoEntity> r = todoService.getTodos();
-		return r;	
+		return todoJpaService.getAllTodos();	
 	}
 	
-	@GetMapping("/todos/{id}")
+	@GetMapping("/{id}")
 	public TodoEntity find(@PathVariable Integer id) {
-		TodoEntity r = todoService.findById(id);
+		TodoEntity r = todoJpaService.getTodoById(id);
 		return r;	
 	}
 
 	//C - INSERT
-	@PostMapping("/todos")
+	@PostMapping
 	public void createTodo(@RequestBody TodoEntity todoEntity) {
-	    todoService.createTodo(todoEntity);
+	    return todoJpaService.createTodo(todoEntity);
 	}
 
 	//U - UPDATE
-	@PutMapping("/todos/{id}")
+	@PutMapping("/{id}")
 	public void updateTodo(@PathVariable Integer id, @RequestBody TodoEntity todoEntity) {
-	    todoService.updateTodoById(id, todoEntity);
+	    return todoJpaService.updateTodo(id, todoEntity);
 	}
 
 	//D - DELTE
-	@DeleteMapping("/todos/{id}")
-	public void updateTodo(@PathVariable Integer id) {
-	    todoService.deleteTodoById(id);
+	@DeleteMapping("/{id}")
+	public void deleteTodo(@PathVariable Integer id) {
+	    todoJpaService.deleteTodo(id);
 	}
 }
+
+
+
+
+

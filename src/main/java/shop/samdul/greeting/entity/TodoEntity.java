@@ -14,4 +14,3 @@ public class TodoEntity {
     private String body;
     private Boolean completed;
 }
-

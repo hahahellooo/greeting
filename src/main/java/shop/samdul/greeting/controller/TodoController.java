@@ -34,20 +34,20 @@ public class TodoController{
 	}
 
 	//C - INSERT
-	@PostMapping("/todos")
-	public void createTodo(@RequestBody TodoEntity todoEntity) {
-	    todoService.createTodo(todoEntity);
-	}
-
+    @PostMapping("/todos")
+    public void createTodo(@RequestBody TodoEntity todoEntity) {
+        todoService.createTodo(todoEntity);
+    }
+    
 	//U - UPDATE
-	@PutMapping("/todos/{id}")
-	public void updateTodo(@PathVariable Integer id, @RequestBody TodoEntity todoEntity) {
-	    todoService.updateTodoById(id, todoEntity);
-	}
+    @PutMapping("/todos/{id}")
+    public void updateTodo(@PathVariable Integer id, @RequestBody TodoEntity todoEntity) {
+        todoService.updateTodoById(id, todoEntity);
+    }
 
-	//D - DELTE
-	@DeleteMapping("/todos/{id}")
-	public void updateTodo(@PathVariable Integer id) {
-	    todoService.deleteTodoById(id);
-	}
+	//D - DELETE
+    @DeleteMapping("/todos/{id}")
+    public void deleteTodo(@PathVariable Integer id) {
+        todoService.deleteTodoById(id);
+    }
 }

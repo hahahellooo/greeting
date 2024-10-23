@@ -1,34 +1,58 @@
 package shop.samdul.greeting.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
 import shop.samdul.greeting.service.TodoService;
 import shop.samdul.greeting.entity.TodoEntity;
+
 import java.util.List;
 
-@RestController //HTTP 요청 처리, json 형식 응답반환
+@RestController
 public class TodoController{
-    @Autowired //TodoService 인스턴스를 자동으로 주입
-    TodoService todoService;
+	
+	@Autowired
+	TodoService todoService;	
 
-    @GetMapping("/todos")
-    public List<TodoEntity> list() { //TodoEntity 객체를 포함한 리스트, 클라이언트에게 json형식으로 반환
-        System.out.println("[Controller]");
-        java.util.List<TodoEntity> r = todoService.getTodos(); //모든할일항목 조회
-        return r;
-    }
-   
-    
-    @GetMapping("/todos/{id}")
-    public TodoEntity find(@PathVariable Integer id) { // url 경로의 id값을 메서드의 매개변수로 매핑
-        TodoEntity r = todoService.findById(id);
-        return r;
-    }
+	@GetMapping("/todos")
+	public List<TodoEntity> list() {
+		System.out.println("[Controller]");
+		List<TodoEntity> r = todoService.getTodos();
+		return r;	
+	}
+	
+	@GetMapping("/todos/{id}")
+	public TodoEntity find(@PathVariable Integer id) {
+		TodoEntity r = todoService.findById(id);
+		return r;	
+	}
 
+	//C - INSERT
+	@PostMapping("/todos")
+	public void createTodo(@RequestBody TodoEntity todoEntity) {
+	    todoService.createTodo(todoEntity);
+	}
 
+	//U - UPDATE
+	@PutMapping("/todos/{id}")
+	public void updateTodo(@PathVariable Integer id, @RequestBody TodoEntity todoEntity) {
+	    todoService.updateTodoById(id, todoEntity);
+	}
 
+	//D - DELTE
+	@DeleteMapping("/todos/{id}")
+	public void updateTodo(@PathVariable Integer id) {
+	    todoService.deleteTodoById(id);
+	}
 }
+
+
+
 
 
